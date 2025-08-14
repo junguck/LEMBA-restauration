@@ -1,0 +1,174 @@
+/* Styles de base et typographie */
+body {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #222;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-family: 'Gilda Display', serif;
+    font-size: 3rem;
+    margin: 0.5rem 0 0.2rem;
+    color: #e0b06b;
+}
+
+.logo p {
+    font-family: 'Cinzel', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Page d'accueil (Hero) */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carrousel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carrousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.carrousel-item.active {
+    opacity: 1;
+}
+
+.carrousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.intro-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    color: white;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menus */
+#menus {
+    margin-top: 5rem;
+}
+
+.menu-card {
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    box-shadow: 0 0 20px rgba(224, 176, 107, 0.4);
+}
+
+.menu-header {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menu-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.7);
+    transition: transform 0.5s ease;
+}
+
+.menu-header:hover img {
+    transform: scale(1.05);
+}
+
+.menu-header h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Gilda Display', serif;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.menu-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    padding: 0 1.5rem;
+}
+
+.menu-content.open {
+    max-height: 1000px; /* Une valeur assez grande pour contenir tout le contenu */
+    padding: 1.5rem;
+}
+
+.menu-content p {
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dotted #444;
+}
+
+.menu-content p:last-child {
+    border-bottom: none;
+}

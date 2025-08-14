@@ -1,0 +1,89 @@
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        @font-face {
+         font-family: 'Creattion';
+         src:url('JosefinSans.otf') format('otf');
+}
+        :root {
+            --primary: #5E3023;
+            --secondary: #895737;
+            --light: #D9B38C;
+            --dark: #1A120B;
+        }
+        
+        body {
+             font-family: 'Creattion', sans-serif;
+            scroll-behavior: smooth;
+             background: url(../img/fond.jpg);
+             background-attachment: fixed;
+        }
+        #presentation{
+            border: #1A120B solid 4px;
+            border-radius: 10px;
+             background: url(../img/fond.jpg);
+        }
+        #horaire{
+            background: white;
+        }
+        
+        h1, h2, h3 {
+             font-family: 'Creattion', sans-serif; 
+        }
+        
+        .african-pattern {
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiPjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0iI2Q5YjM4YyI+PC9yZWN0PjxwYXRoIGQ9Ik0wLDIwIEMxMCwyMCAyMCwxMCAyMCwwIE0yMCw0MCBDMzAsNDAgNDAsMzAgNDAsMjAgTTQwLDIwIEMzMCwyMCAyMCwzMCAyMCw0MCBNMjAsMCBDMTAsMCAwLDEwIDAsMjAiIHN0cm9rZT0iIzVlMzAyMyIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIj48L3JlY3Q+PC9zdmc+');
+        }
+        
+        .dish-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(26, 18, 11, 0.2);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .hero-image {
+            background-blend-mode: overlay;
+            background-color: rgba(26, 18, 11, 0.3);
+        }
+        
+        .opening-hours tr:nth-child(even) {
+            background-color: rgba(217, 179, 140, 0.2);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fadeIn {
+            animation: fadeIn 1s ease forwards;
+        }
+        
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+        
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+        
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+    

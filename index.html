@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMBA - Restaurant Africain</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/modern.js"></script>
+   <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-[#5E3023]">LEMBA</span>
+                <span class="ml-2 text-xs text-[#895737]">la ou le gout murmure les traditions</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#accueil" class="nav-link text-[#5E3023] hover:text-[#895737] transition">Accueil</a>
+                <a href="#presentation" class="nav-link text-[#5E3023] hover:text-[#895737] transition">Présentation</a>
+                <a href="#horaires" class="nav-link text-[#5E3023] hover:text-[#895737] transition">Horaires</a>
+                <a href="#plats" class="nav-link text-[#5E3023] hover:text-[#895737] transition">Nos Plats</a>
+                <a href="#contact" class="nav-link text-[#5E3023] hover:text-[#895737] transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-[#5E3023]"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero-image min-h-screen flex items-center justify-center bg-cover bg-center relative" style="background-image: url('img/IMG-20250812-WA0007.jpg')">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 animate-fadeIn"></h1>
+            <p class="text-xl md:text-2xl text-[#D9B38C] mb-8 animate-fadeIn delay-100">plongez dans un cameroun de gout</p>
+            <div class="animate-fadeIn delay-200">
+                <a href="#plats" class="bg-[#5E3023] hover:bg-[#895737] text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block mr-4">Découvrir</a>
+                <a href="#contact" class="border-2 border-white text-white hover:bg-white hover:text-[#5E3023] font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Réserver</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#presentation" class="text-white animate-bounce inline-block">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section id="presentation" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5E3023] mb-4">Nous...</h2>
+                <div class="w-24 h-1 bg-[#895737] mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1698&q=80" alt="Intérieur du restaurant" class="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold text-[#5E3023] mb-6">Bienvenue chez LEMBA</h3>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Ici, la tradition rencontre la passion. Nous utilisons des recettes transmises de génération en génération, des secrets de famille que nous partageons avec vous pour vous offrir une expérience authentique et inoubliable. Nos ingrédients sont soigneusement sélectionnés, privilégiant la fraîcheur et la qualité pour garantir un goût véritablement camerounais. Chaque bouchée est une explosion de saveurs, un mélange harmonieux d'épices locales comme le ndjansan, le poivre de Penja, et le pèbè, qui donnent à nos plats leur caractère unique.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-700">
+                        Plus qu'un simple repas, nous vous offrons une immersion totale. Venez partager un moment de convivialité autour d'un plat généreux, savourez l'accueil chaleureux qui fait la renommée du Cameroun et découvrez l'âme d'un peuple à travers sa nourriture. Notre restaurant n'est pas seulement un lieu pour manger, c'est un point de rencontre, un lieu d'échange et de célébration de la culture camerounaise.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Notre restaurant est un hommage à la richesse et à la diversité de la cuisine africaine. Chaque plat est préparé avec passion et respect des traditions culinaires, pour vous offrir une expérience authentique et mémorable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Horaires -->
+    <section id="horaires" class="py-20 bg-[#1A120B] text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#D9B38C] mb-4">Nos Horaires</h2>
+                <div class="w-24 h-1 bg-[#895737] mx-auto"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-[#5E3023] rounded-lg shadow-2xl overflow-hidden">
+                <table class="w-full opening-hours">
+                    <thead>
+                        <tr class="bg-[#895737]">
+                            <th class="py-4 px-6 text-left">Jour</th>
+                            <th class="py-4 px-6 text-left">ouverture</th>
+                            <th class="py-4 px-6 text-left">fermeture</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Lundi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23h50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Mardi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23h50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Mercredi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23h50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Jeudi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23-50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Vendredi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23-50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Samedi</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23-50</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-6 font-medium">Dimanche</td>
+                            <td class="py-4 px-6">12h00</td>
+                            <td class="py-4 px-6">23-50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-[#D9B38C] mb-6">Pour les groupes de plus de 8 personnes, nous acceptons les réservations en dehors des heures d'ouverture.</p>
+                <a href="#contact" class="bg-[#D9B38C] hover:bg-[#895737] text-[#1A120B] font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Plats -->
+    <section id="plats" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5E3023] mb-4">Nos Spécialités</h2>
+                <div class="w-24 h-1 bg-[#895737] mx-auto"></div>
+                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">Découvrez nos plats signature qui vous transporteront au cœur de l'Afrique</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Plat 1 -->
+                <div class="dish-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-500 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="img/OIP (2).webp" alt="Poulet Yassa" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-[#5E3023] text-white px-3 py-1 rounded-full text-sm font-bold">Nouveau</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#5E3023] mb-2">Douceur des Champs </h3>
+                        <p class="text-gray-600 mb-4">: Jus de canne à sucre frais.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-[#895737]"> 12 000 fcfa</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plat 2 -->
+                <div class="dish-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-500 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="img/OIP.webp" alt="Mafé" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#5E3023] mb-2">Royaume Bamiléké </h3>
+                        <p class="text-gray-600 mb-4">: Poulet rôti au vin de palme et épices royales. </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-[#895737]">22 000 fcfa</span>
+                           
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Plat 3 -->
+                <div class="dish-card bg-white rounded-lg overflow-hidden shadow-lg transition duration-500 hover:shadow-xl">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="img/OIP (1).webp" alt="Attiéké" class="w-full h-full object-cover transition duration-500 hover:scale-110">
+                        <div class="absolute top-4 right-4 bg-[#5E3023] text-white px-3 py-1 rounded-full text-sm font-bold">Végétarien</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-[#5E3023] mb-2">Rêve du Village </h3>
+                        <p class="text-gray-600 mb-4">: Beignets de banane douce au sucre de canne. </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-[#895737]">6 000 fcfa</span>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="menu.html" class="border-2 border-[#5E3023] hover:bg-[#5E3023] hover:text-white text-[#5E3023] font-bold py-3 px-8 rounded-full transition duration-300 inline-block">Voir tout le menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-20 bg-[#f5f0e9]">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#5E3023] mb-4">Contactez-nous</h2>
+                <div class="w-24 h-1 bg-[#895737] mx-auto"></div>
+                <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">Pour réserver ou pour toute question, n'hésitez pas à nous contacter</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2 bg-white p-10 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-[#5E3023] mb-6">Envoyez-nous un message</h3>
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 mb-2">Nom complet</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#895737]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#895737]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 mb-2">Téléphone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#895737]">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#895737]"></textarea>
+                        </div>
+                        <button type="submit" class="bg-[#5E3023] hover:bg-[#895737] text-white font-bold py-3 px-8 rounded-full transition duration-300 w-full">Envoyer</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-10 rounded-lg shadow-lg mb-8">
+                        <h3 class="text-2xl font-bold text-[#5E3023] mb-6">Nos coordonnées</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-[#D9B38C] p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-[#5E3023]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Adresse</h4>
+                                    <p class="text-gray-600">quartier bastos, golf bastos</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-[#D9B38C] p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-[#5E3023]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Téléphone</h4>
+                                    <p class="text-gray-600">+237 670 932 108</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-[#D9B38C] p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-[#5E3023]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">Lemba@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-10 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#5E3023] mb-6">Nous suivre</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-[#D9B38C] hover:bg-[#895737] text-[#5E3023] p-3 rounded-full transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-[#D9B38C] hover:bg-[#895737] text-[#5E3023] p-3 rounded-full transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-[#D9B38C] hover:bg-[#895737] text-[#5E3023] p-3 rounded-full transition duration-300">
+                                <i class="fab fa-tripadvisor"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
